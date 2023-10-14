@@ -1,0 +1,25 @@
+/*index*/
+
+.caja{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+
+/*productos*/
+
+
+/*contacto*/
+
+.horarios{
+    display: inline-block;
+    box-sizing: border-box;
+    
+}
+
+.horarios > tbody > tr > td{
+    border: 2px solid black;
+}
