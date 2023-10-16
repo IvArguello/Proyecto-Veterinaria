@@ -1,5 +1,4 @@
 /*index*/
-
 .caja{
     background-color: aqua;
     display: flex;
@@ -12,8 +11,10 @@
 /*productos*/
 
 
-/*contacto*/
+/*servicios*/
 
+
+/*contacto*/
 .horarios{
     display: inline-block;
     box-sizing: border-box;
