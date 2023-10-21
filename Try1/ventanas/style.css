@@ -1,20 +1,31 @@
 /*index*/
+
 .caja{
     background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+}
+.logo{
+    justify-content: center
+}
+.nav , .items_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.items_nav, a{
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem;
 }
 
 
 /*productos*/
 
 
-/*servicios*/
-
-
 /*contacto*/
+
 .horarios{
     display: inline-block;
     box-sizing: border-box;
