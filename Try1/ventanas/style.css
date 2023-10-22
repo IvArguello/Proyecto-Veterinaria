@@ -93,8 +93,6 @@ p .redes{
     height: 35px;
 }
 
-
-
 /*productos*/
 .productotitulo{
     border: f5d59a 5px solid;
@@ -135,11 +133,33 @@ p .redes{
     flex-direction:row;
     justify-content: space-evenly;
 }
+.serviciotitulo{
+    text-align: center;
+}
+.serviciolista{
+    font-size: 1rem;
+}
 .servicioimg{
     padding: 0 2em;
     width: 420px;
     height: 320px;
 }
+.servicioboton{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color:white;
+    background: rgb(127, 155, 133);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.servicioboton:hover{
+    background: green;
+    transform: scale(1);
+} 
 .vet{
     background:  linear-gradient( to right, #696151,#f5d59a, #696151 );
     border-radius: 5px;
@@ -151,14 +171,58 @@ p .redes{
     border-radius: 5px;
     margin: 20px 0;
 }
+
 /*contacto*/
 
-.horarios{
-    display: inline-block;
-    box-sizing: border-box;
-    
+.mapa{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
 }
 
-.horarios > tbody > tr > td{
-    border: 2px solid black;
+form, fieldset{
+    border: 0;
+    padding: 1rem;
 }
+
+form label, form legend{
+    display: block;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+table{
+    margin: 2rem 2rem;
+} 
+
+thead{
+    background: gray;
+    color: white;
+    font-weight: bold;
+} 
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+} 
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: rgb(127, 155, 133);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background: green;
+    transform: scale(1);
+} 
