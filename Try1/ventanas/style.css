@@ -1,7 +1,10 @@
 /*index*/
+body{
+    background-color: rgb(249, 254, 243);
+}
 
 .caja{
-    background-color: rgb(138, 167, 144);
+    background-color: rgb(127, 155, 133);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -18,16 +21,23 @@
     display: flex;
     margin-left: 94%;
 }
-
+li{
+    list-style-type: none;
+}
+::marker {
+    display: none;
+}
 
 .items_nav, a{
-    color: black;
-    text-decoration: none;
+    color: rgb(18, 18, 18);
+    text-decoration:none;
     padding: 0.5rem;
 }
 .contenedor{
     display: flex;
-    background-color: #757575b5;
+    /*background-color: #757575b5;*/
+    background: linear-gradient(to bottom, #989898, #444343);
+    ;
     margin: 10px 0;
     border-radius: 10px;
 }
@@ -36,9 +46,53 @@
     height: 400px;
     width: 400;
 }
+.titulo{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .textoDesc{
+    margin-top: 75px;
     padding-top: 25px;
 }
+
+footer{
+    display:flex;
+    flex-direction: row;
+    row-gap: 20px;
+}
+.eslogan{
+    background: linear-gradient(to bottom, #989898, #444343);
+    width: 50%;
+    height: 150px;
+    padding-top: 50px;
+    padding-left: 50px;
+    border-top-left-radius: 10px;
+
+}
+.redes{
+    background: linear-gradient(to bottom, #989898, #444343);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    border-top-right-radius: 10px;
+
+}
+.icon-redes{
+    display: flex;
+    flex-direction: row;
+}
+p .redes{
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+.iconos{
+    width: 35px;
+    height: 35px;
+}
+
 
 
 /*productos*/
