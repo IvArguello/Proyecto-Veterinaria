@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <div class="caja">
-            <img src="https://imgs.search.brave.com/azcOh5QRabCLv58w7OzHbNpbmVkgqD9BgNtd0v_fpOo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzE0MjkxMi9p/c29sYXRlZC9wcmV2/aWV3LzRlMTc2OTVl/NmZmNDM3MDdmYTZm/MTA3OGMyNGQ5OWM4/LWxvZ290aXBvLWRl/LWFuaW1hbC1wZXJy/by1uZWdyby5wbmc" alt="Logo de la Veterinaria" width="60px" height="60px">
+            <h1><img src="" alt=""></h1>
             <nav>
                 <ul class="nav">
                     <li class="items_nav"><a href="index.html">Inicio</a></li>
@@ -36,7 +37,7 @@
         <h2>Contactate con nosotros</h2>
         <h4>Completa el formulario con tus datos y en breve nos estaremos comunicando con vos.</h4>
     
-        <form class="formulario">
+        <form class="formulario" onsubmit="return validacionFormulario()">
             <label for="nombreApellido">Nombre y Apellido</label>
             <input type="text" id="nombreApellido" class="input-padron" required>
             
@@ -44,7 +45,7 @@
             <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
 
             <label for="telefono">Teléfono </label>
-            <input type="tel" id="Telefono" class="input-padron" required placeholder="(xx)xxx xxx">
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(xx)xxx xxx">
 
             <label for="mensaje">Mensaje</label>
             <textarea cols="65" rows="10" id="mensaje" class="input-padron" required></textarea>
