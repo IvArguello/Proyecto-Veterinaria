@@ -7,7 +7,6 @@ body{
     background-color: rgb(127, 155, 133);
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 .logo{
     justify-content: center;
@@ -37,14 +36,13 @@ li{
     display: flex;
     /*background-color: #757575b5;*/
     background: linear-gradient(to bottom, #989898, #444343);
-    ;
     margin: 10px 0;
     border-radius: 10px;
 }
 .cuadro{
     margin: 20px 30px 20px 30px;
-    height: 400px;
-    width: 400;
+    height: 350px;
+    width: 350px;
 }
 .titulo{
     margin-top: 15px;
@@ -61,7 +59,7 @@ footer{
     row-gap: 20px;
 }
 .eslogan{
-    background: linear-gradient(to bottom, #989898, #444343);
+    background: linear-gradient(to bottom, #acacac, #444343);
     width: 50%;
     height: 150px;
     padding-top: 50px;
@@ -70,7 +68,7 @@ footer{
 
 }
 .redes{
-    background: linear-gradient(to bottom, #989898, #444343);
+    background: linear-gradient(to bottom, #acacac, #444343);
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -96,6 +94,17 @@ p .redes{
 
 
 /*productos*/
+.productocuadro{
+    background: linear-gradient(to bottom, #acacacaf, #44434399);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.productoimg{
+    width: 120px;
+    height: 120px;
+}
 
 /*servicios*/
 
