@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <img class="logo" src="https://imgs.search.brave.com/azcOh5QRabCLv58w7OzHbNpbmVkgqD9BgNtd0v_fpOo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzE0MjkxMi9p/c29sYXRlZC9wcmV2/aWV3LzRlMTc2OTVl/NmZmNDM3MDdmYTZm/MTA3OGMyNGQ5OWM4/LWxvZ290aXBvLWRl/LWFuaW1hbC1wZXJy/by1uZWdyby5wbmc" alt="Logo de la Veterinaria" >
+            <nav>
+                <ul class="nav">
+                    <li class="items_nav"><a href="index.html">Inicio</a></li>
+                    <li class="items_nav"><a href="productos.html">Productos</a></li>
+                    <li class="items_nav"><a href="servicios.html">Servicios</a></li>
+                    <li class="items_nav"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <h2 class="sedes">Nuestras sedes</h2>
+            <div class="mapa">
+                <h4 class="sucursal">Zona norte 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13147.422466200098!2d-58.47928927711656!3d-34.53188583686317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697135878759!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </h4>
+                <h4 class="sucursal">Palermo 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9291.369040954838!2d-58.401560653125806!3d-34.578992367850475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1697135923240!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </h4>
+            </div>
+        </section>
+
+        <h2>Contactate con nosotros</h2>
+        <h4>Completa el formulario con tus datos y en breve nos estaremos comunicando con vos.</h4>
+    
+        <form class="formulario" onsubmit="validacionFormulario()">
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" id="nombreApellido" class="input-padron" required>
+            
+            <label for="correoElectronico">Correo Electrónico</label>
+            <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono </label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(xx)xxx xxx">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="65" rows="10" id="mensaje" class="input-padron"></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                <label><input type="radio" name="contacto" value="email">Email</label>
+                
+                <label><input type="radio" name="contacto" value="Telefono">Teléfono</label>
+                
+                <label><input type="radio" name="contacto" value="whatsapp" checked>WhatsApp</label>              
+            </fieldset>
+            
+            <fieldset>
+                <legend>¿En cual horario prefiere ser contactado?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+            
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        </form>
+
+        <table class="horarios">
+            <thead>
+                <tr>
+                    <td>Dias</td>
+                    <td>Horarios</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08:00hs a 16:00hs</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>08:00hs a 16:00hs</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08:00hs a 16:00hs</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>08:00hs a 16:00hs</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08:00hs a 16:00hs</td>
+                </tr>
+                <tr>
+                    <td>Domingos</td>
+                    <td>Guardia 24hs</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer> 
+        <div class="eslogan">
+            <p>Nos ponemos al servicio para el bienestar de nuestras Mascotas</p>
+            <p>No dude en comunicarse por medio de nuestras redes.</p>
+        </div>
+        
+        <div class="redes">
+            <a class="icon-redes" href=""><img class="iconos" src="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721672-instagram_108066.png"><p>Instagram</p></a>
+            <a class="icon-redes" href=""><img class="iconos" src="https://cdn.icon-icons.com/icons2/285/PNG/256/social_facebook_box_blue_256_30649.png"><p></p>Facebook</a><p></p></a>
+            <a class="icon-redes" href=""><img class="iconos" src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491579609-yumminkysocialmedia08_83079.png"><p></p>YouTube</a><p></p></a>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
