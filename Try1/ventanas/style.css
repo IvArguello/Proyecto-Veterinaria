@@ -1,20 +1,22 @@
 /*index*/
 
 .caja{
-    background-color: aqua;
+    background-color: rgb(138, 167, 144);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 .logo{
     justify-content: center;
-    width: 60px;
-    aspect-ratio: auto 60 / 60;
-    height: 60px;
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    margin-left:10px;
 }
 .nav , .items_nav{
     display: flex;
     flex-direction: row;
+    left: 70%;
 }
 
 .items_nav, a{
@@ -25,6 +27,8 @@
 
 
 /*productos*/
+
+/*servicios*/
 
 
 /*contacto*/
