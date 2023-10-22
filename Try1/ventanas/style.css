@@ -94,16 +94,35 @@ p .redes{
 
 
 /*productos*/
+.productotitulo{
+    border: f5d59a 5px solid;
+}
 .productocuadro{
-    background: linear-gradient(to bottom, #acacacaf, #44434399);
+    background: linear-gradient(to bottom, #f9ecb6,#f5d59a, #fbf0c2);
     display: flex;
     flex-direction: column;
     margin: 10px 0;
     border-radius: 10px;
 }
+.productoindices{
+    font-size: 2rem;
+    background-color: rgb(127, 155, 133);
+    border-radius: 5px;
+}
 .productoimg{
     width: 120px;
     height: 120px;
+    border-radius:  10px;
+}
+.reja{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con el mismo ancho */
+  grid-gap: 5px; /* Espacio entre las imágenes */
+}
+.reja2{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crea 3 columnas con el mismo ancho */
+  grid-gap: 5px; /* Espacio entre las imágenes */
 }
 
 /*servicios*/
