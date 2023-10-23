@@ -47,12 +47,17 @@ li{
 .titulo{
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
 }
 .textoDesc{
     margin-top: 75px;
     padding-top: 25px;
     margin-right: 2em;
     font-size: 1.4rem;
+}
+.vete{
+    text-align: center;
+    padding: 4rem;
 }
 
 footer{
