@@ -2,7 +2,9 @@
 body{
     background-color: rgb(249, 254, 243);
 }
-
+h2{
+    font-size: 24px;
+}
 .caja{
     background-color: rgb(127, 155, 133);
     display: flex;
@@ -35,7 +37,7 @@ li{
 .contenedor{
     display: flex;
     /*background-color: #757575b5;*/
-    background: linear-gradient(to bottom, #989898, #444343);
+    background: linear-gradient(to bottom, #f6faf8,#bfcfc6, #94c7ad);
     margin: 10px 0;
     border-radius: 10px;
 }
@@ -66,7 +68,7 @@ footer{
     row-gap: 20px;
 }
 .eslogan{
-    background: linear-gradient(to bottom, #acacac, #444343);
+    background: linear-gradient(to bottom, #aaaaa9, #9b9b9b);
     width: 50%;
     height: 150px;
     padding-top: 50px;
@@ -75,7 +77,7 @@ footer{
 
 }
 .redes{
-    background: linear-gradient(to bottom, #acacac, #444343);
+    background: linear-gradient(to bottom, #aaaaa9, #9b9b9b);
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -99,11 +101,9 @@ p .redes{
 }
 
 /*productos*/
-.productotitulo{
-    border: f5d59a 5px solid;
-}
+
 .productocuadro{
-    background: linear-gradient(to bottom, #f9ecb6,#f5d59a, #fbf0c2);
+    background: linear-gradient(to bottom, #f6faf8,#bfcfc6, #94c7ad);
     display: flex;
     flex-direction: column;
     margin: 10px 0;
@@ -133,10 +133,11 @@ p .redes{
 /*servicios*/
 
 .servicio{
-    background: linear-gradient(to bottom, #f9ecb6,#f5d59a, #fbf0c2);
+    background: linear-gradient(to bottom, #f6faf8,#bfcfc6, #94c7ad);
     display: flex;
     flex-direction:row;
     justify-content: space-evenly;
+    padding: 4rem;
 }
 .serviciotitulo{
     text-align: center;
@@ -160,29 +161,36 @@ p .redes{
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    position: relative;
 }
 .servicioboton:hover{
     background: green;
     transform: scale(1);
 } 
 .vet{
-    background:  linear-gradient( to right, #696151,#f5d59a, #696151 );
+    background: linear-gradient(to bottom, #4c886a,#52aa78, #94c7ad);
     border-radius: 5px;
     margin: 20px 0;
 }
 
 .pel{
-    background:  linear-gradient( to right, #696151,#f5d59a, #696151 );
+    background: linear-gradient(to bottom, #4c886a,#52aa78, #94c7ad);
     border-radius: 5px;
     margin: 20px 0;
 }
 
 /*contacto*/
 
+.sucur{
+    background: linear-gradient(to bottom, #f6faf8,#bfcfc6, #94c7ad);
+}
+
 .mapa{
+    background: linear-gradient(to bottom, #f6faf8,#bfcfc6, #94c7ad);
     display: flex;
-    flex-direction: row;
-    padding: 1rem;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 4rem;
 }
 
 form, fieldset{
@@ -210,7 +218,9 @@ td, th{
     border: 1px solid black;
     padding: 8px 15px;
 } 
-
+.horarios{
+    text-align: center;
+}
 .checkbox{
     margin: 20px 0;
 }
